@@ -1,0 +1,17 @@
+replicaCount: 2
+
+image:
+  repository: ""
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+ingress:
+  enabled: false
+  hosts:
+    - host: example.com
+      paths:
+        - /
